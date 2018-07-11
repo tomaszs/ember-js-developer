@@ -1,0 +1,28 @@
+<div class="jumbotron">
+  <h1>Territories list</h1>
+  <p class="lead">Here you will find territory list</p>
+  <hr class="my-4">
+  <p>Look around and see what we have here, or add a territory</p>
+  {{#link-to 'territories.add' class="btn btn-primary btn-lg" role="button"}}Add territory{{/link-to}}
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="organizationFilter">Filter by name:</span>
+  </div>
+  {{input type="text" value=nameFilter class="form-control" id="organizationFilter" aria-describedby="organizationFilter"}}
+</div>
+
+{{#if filteredTerritories.length}}
+	<div class="list-group">
+	  {{#each filteredTerritories as |territory|}}
+		{{#link-to 'territory' territory class="list-group-item list-group-item-action territoryName"}}{{territory.name}}{{/link-to}}
+		{{#link-to 'territories.edit' territory.id class="btn btn-lg" role="button"}}Edit territory{{/link-to}}
+		<button type="button" class="btn btn-danger" {{action 'delete' territory}}>Delete</button>
+	  {{/each}}
+	</div>
+{{else}}
+	<div class="alert alert-warning" role="alert">
+		Sorry, there are no results for the filter you've set up
+	</div>
+{{/if}}

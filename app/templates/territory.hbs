@@ -1,0 +1,19 @@
+
+<div class="jumbotron">
+<h1>Territory {{model.name}}</h1>
+  <p class="lead">Here are details about territory. The representative of this territory is {{model.representative}}.</p>
+  <hr class="my-4">
+  <p>Below is a list of lawyers assigned to this territory.</p>
+</div>
+
+{{#if model.lawyers.length}}
+	<div class="list-group">
+	  {{#each model.lawyers as |lawyer|}}
+		<div class="list-group-item">{{lawyer.name}} {{lawyer.secondname}}</div>
+	  {{/each}}
+	</div>
+{{else}}
+	<div class="alert alert-warning" role="alert">
+		Sorry, there are no lawyers associated to this territory
+	</div>
+{{/if}}

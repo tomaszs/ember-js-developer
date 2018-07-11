@@ -1,5 +1,17 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  {{#link-to 'index' class="navbar-brand"}}MyApp{{/link-to}}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        {{#link-to 'territories' class="nav-link"}}Territories{{/link-to}}
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
 
 {{outlet}}

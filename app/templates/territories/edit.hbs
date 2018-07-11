@@ -1,0 +1,20 @@
+<div class="jumbotron">
+   <h1>Edit territory {{unbound model.name}}</h1>
+  <p class="lead">Here you can edit a territory</p>
+  <hr class="my-4">
+  <p>Give it a try. It's very cool</p>
+</div>
+
+<form>
+  <div class="form-group">
+    <label for="territoryName">Territory name</label>
+    {{input value=model.name type="text" class="form-control" id="territoryName" placeholder="Enter territory name"}}
+  </div>
+  
+  <div class="form-group">
+    <label for="representativeName">Representative name</label>
+    {{input value=model.representative type="text" class="form-control" id="representativeName" placeholder="Enter representative name"}}
+  </div>
+ 
+  <button class="btn btn-primary" {{action 'submit'}} >Submit</button>
+</form>
