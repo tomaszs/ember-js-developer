@@ -4,8 +4,8 @@ A simple app made in Ember CLI, Ember.JS, Bootstrap, Mirage with basic tests. It
 
 JSON API (mocked):
 
-territories (name (string), lawyers (many), representative (string))
-lawyers (name, secondname - strings)
+* territories (name (string), lawyers (many), representative (string))
+* lawyers (name, secondname - strings)
 
 ## Prerequisites
 
