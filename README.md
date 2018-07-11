@@ -15,8 +15,8 @@ You will need the following things properly installed on your computer.
 * [Node.js 8.9.0](https://nodejs.org/) (with npm)
 * [Ember CLI 3.2.0](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
-* [Boostrap 4.1.1] (https://getbootstrap.com/)
-* [Ember ClI Mirage 0.4.7] (https://github.com/samselikoff/ember-cli-mirage)
+* [Boostrap 4.1.1](https://getbootstrap.com/)
+* [Ember ClI Mirage 0.4.7](https://github.com/samselikoff/ember-cli-mirage)
 
 ## Installation
 
